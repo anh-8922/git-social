@@ -1,0 +1,16 @@
+.userImage {
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem 0 3rem 0;
+    color: whitesmoke;
+    font-size: 2rem;
+    color: black;
+}
+
+/*background-color: #286da8;*/

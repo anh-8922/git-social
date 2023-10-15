@@ -1,11 +1,14 @@
 // pages/user/[username].tsx
 import React from 'react';
 import { useRouter } from 'next/router';
+import styles from '@/styles/components.module.css';
+import Layout from '@/components/layout';
 import useSWR from 'swr';
 //import { useGitHubApi } from '../../lib/useGitHubApi';
 import { useGitHubApi } from '../api/gitAPI';
 //import UserCard from '../../components/UserCard';
 import UserCard from '@/components/userCard';
+
 
 const UserDetails: React.FC = () => {
   const router = useRouter();
@@ -16,7 +19,7 @@ const UserDetails: React.FC = () => {
   if (isError) return <div>Error loading data</div>;
 
   return (
-    <div>
+    <Layout>
       <h1>User Details</h1>
       <UserCard
         avatarUrl={user.avatar_url}
@@ -30,7 +33,7 @@ const UserDetails: React.FC = () => {
         publicRepos={user.public_repos}
       />
       {/* Display additional user details here */}
-    </div>
+    </Layout>
   );
 };
 

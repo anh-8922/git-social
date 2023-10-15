@@ -7,7 +7,7 @@ const fetcher = async (url: string) => {
   return response.data;
 };
 
-export const useGitHubApi = (path: string, perPage: number = 15) => {
+export const useGitHubApi = (path: string, perPage: number = 11) => {
   const baseUrl = 'https://api.github.com'; // GitHub API base URL
   const url = `${baseUrl}${path}?per_page=${perPage}`;
   

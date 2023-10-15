@@ -1,5 +1,6 @@
 // components/UserCard.tsx
 import React from 'react';
+import styles from '@/styles/components.module.css';
 
 interface UserCardProps {
   avatarUrl: string;
@@ -26,7 +27,7 @@ const UserCard: React.FC<UserCardProps> = ({
 }) => {
   return (
     <div>
-      <img src={avatarUrl} alt={`${username}'s avatar`} />
+      <img className={styles.userImage} src={avatarUrl} alt={`${username}'s avatar`} />
       <p>{firstName} {lastName}</p>
       <p>{username}</p>
       {company && <p>Company: {company}</p>}
