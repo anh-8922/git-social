@@ -2,6 +2,7 @@ import styles from '@/styles/components.module.css';
 import { Lobster } from 'next/font/google';
 import Link from 'next/link';
 
+//Add Lobster font from Google
 const lobster = Lobster({
     weight: '400',
     subsets: ['latin'],

@@ -6,13 +6,14 @@ import Layout from '@/components/layout';
 import { useGitHubApi } from '../api/gitAPI';
 import UserCard from '@/components/userCard';
 import Link from 'next/link';
+import LoadingSpinner from '@/components/spinner';
 
 export default function userDetails() {
   const router = useRouter();
   const { username } = router.query;
   const { data: user, isLoading, isError } = useGitHubApi(`/users/${username}`);
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) return LoadingSpinner;
   if (isError) return <div>Error loading data</div>;
 
   return (

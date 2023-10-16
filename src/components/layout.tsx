@@ -4,6 +4,7 @@ import styles from '@/styles/index.module.css';
 import bg from '@/assets/background.jpg';
 import { Leckerli_One } from 'next/font/google';
 
+//Main Layout 
 const leckerli = Leckerli_One({
     weight: '400',
     subsets: ['latin'],

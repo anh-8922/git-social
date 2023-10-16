@@ -2,6 +2,10 @@
 import React from 'react';
 import styles from '@/styles/components.module.css';
 
+
+//This userCard component is designed to display information about users on the main page.
+//It will be imported and used in a parent component: [username]
+
 interface UserCardProps {
   avatarUrl: string;
   firstName: string;

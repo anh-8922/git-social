@@ -2,6 +2,12 @@
 import useSWR from 'swr';
 import axios from 'axios';
 
+//I choose axios to make HTML requests or fetching Data from APIs.
+//It simplifies HTTP requests with a clean API, enabling straightforward asynchronous code with Promises.
+//supports interceptors for global request/response handling, automatic JSON parsing, 
+//request cancelation, and versatile usage in both client-side and server-side applications, 
+//offering a comprehensive and user-friendly solution for making HTTP requests.
+
 const fetcher = async (url: string) => {
   const response = await axios.get(url);
   return response.data;

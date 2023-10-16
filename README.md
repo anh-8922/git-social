@@ -1,32 +1,27 @@
-# React.js Coding Fiesta 🚀
+# React.js Coding Challenge 🚀
 # Welcome to Git Buddies Page 🚀
 
-🎉 Welcome to the React.js Coding Fiesta, where I'll embark on an adventure of fetching data, crafting web magic, and turning API sorcery into a splendid web app using the wondrous Next.js.
+🎉 Welcome to the React.js Coding Challenge, where I'll embark on an adventure of fetching data, crafting web magic, and turning API sorcery into a splendid web app using the wondrous Next.js.
 
-## The Great Quest 🏹
+## Fetching GitHub Users API 🏹
 
 Our mission? Create two pages:
 
 ### The User List Page 📜
 
-A default screen that summons Github users into a list. Behold their Avatars, First Names, Last Names, and Usernames! Each list item is a portal to the magical User Details page.
+An initial interface that assembles GitHub users into a structured list, presenting their Avatars and Usernames. Each entry serves as a gateway to the User Details page, offering a seamless navigation experience.
 
 ### The User Details Page 🌟
 
-A sanctuary of detailed wisdom about the chosen one. Unveil extended profile secrets, like company and social handles. Revel in a summary of followers, following, and the number of public repositories.
+Explore an abundant source of detailed insights about the selected individual. Uncover comprehensive profile details such as professional affiliations and social media identifiers. Delve into a succinct overview of followers, followings, and the count of publicly available repositories.
 
-## Enchantments and Gadgets 🧙‍♂️
+### Summary 🧙‍♂️
 
-Navigate through the coding realms with these magical considerations:
+In this project, I employed Next.js and TypeScript for efficient development. Axios facilitated HTTP requests and data retrieval. CSS modules ensured modular styling, and Next.js' built-in routing streamlined navigation. The application boasts responsiveness, featuring a main page listing all users, with dynamically generated routes for individual user pages for an enhanced user experience.
 
-- **Data Fetching:** Marvel at the possibilities of Server-Side Rendering (SSR).
-- **Routing:** Chart your course through the mystical paths of routing.
-- **Styling:** Cast spells for responsiveness to make your creation shine.
-- **Component Composition:** Conjure the art of reusing Components for maximum wizardry.
+### Contact
 
-## Incantations to Begin ✨
-
-After summoning the project with create-next-app, utter these enchantments to bring it to life:
+If you have further question, feel free to contact me at anh-dev@hotmail.com
 
 ```bash
 npm run dev

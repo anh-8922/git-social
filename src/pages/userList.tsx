@@ -4,13 +4,17 @@ import styles from '@/styles/index.module.css';
 import Link from 'next/link';
 import { useGitHubApi } from './api/gitAPI';
 import ListCard from '@/components/listCard';
+import LoadingSpinner from '@/components/spinner';
 
 export default function UserList() {
   const perPage = 11;
-  const { data: users, isLoading, isError } = useGitHubApi('/users', 100); // Fetch a larger number initially
+  const { data: users, isLoading, isError } = useGitHubApi('/users', 100); // Fetch a larger number initially: 100
+  
+  //Calculate pages
   const totalPages = Math.ceil(users?.length / perPage) || 1;
   const [currentPage, setCurrentPage] = React.useState(1);
 
+  //Add Paginations to the list
   const nextPage = () => {
     if (currentPage < totalPages) {
       setCurrentPage((prevPage) => prevPage + 1);
@@ -23,7 +27,9 @@ export default function UserList() {
     }
   };
 
-  if (isLoading) return <div>Loading...</div>;
+  //Check error
+
+  if (isLoading) return <LoadingSpinner/>;
   if (isError) return <div>Error loading data</div>;
 
   const startIndex = (currentPage - 1) * perPage;
@@ -38,8 +44,7 @@ export default function UserList() {
             <div className={styles.listUser}>
               <ListCard
                 avatarUrl={user.avatar_url}
-                firstName={user.name?.split(' ')[0] || ''}
-                lastName={user.name?.split(' ')[1] || ''}
+                
                 username={user.login}
               />
             </div>
@@ -59,4 +64,3 @@ export default function UserList() {
     </div>
   );
 };
-
