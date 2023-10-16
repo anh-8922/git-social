@@ -1,5 +1,4 @@
 import Head from 'next/head'
-//import Image from 'next/image'
 import UserList from './userList';
 import Layout from '@/components/layout';
 

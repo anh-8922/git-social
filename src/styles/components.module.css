@@ -1,14 +1,14 @@
-.listCard {
-
-}
-
+  /****************************/
+ /**INDEX PAGE , USERS LIST***/
+/****************************/
 .listImages {
     width: 6rem;
     border-radius: 50%;
 }
 
-
-
+  /****************************/
+ /********HEADING COMPONENT***/
+/****************************/
 
 .heading {
     display: flex;
@@ -34,7 +34,9 @@
     color: pink;
 }
 
-/*background-color: #286da8;*/
+  /****************************/
+ /*********SINGLE USER PAGE***/
+/****************************/
 
 .userCard {
     background-color: whitesmoke;
@@ -59,13 +61,6 @@
     border-radius: 50%;
 }
 
-@media (min-width: 701px) and (max-width: 1120px) {
-    .cardBody {
-        display: flex;
-        flex-direction: column;
-        gap: 3rem
-    }
-}   
 
 .backButton {
     position: absolute;
@@ -76,3 +71,15 @@
     border-radius: 1.5rem;
     font-size: 1.5rem;
 }
+
+  /***********************************/
+ /**MEDIA QUERY FOR RESPONSIVENESS***/
+/***********************************/
+
+@media (min-width: 701px) and (max-width: 1120px) {
+    .cardBody {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem
+    }
+}   

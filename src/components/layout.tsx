@@ -2,7 +2,6 @@ import React, { ReactNode } from 'react';
 import Heading from "./heading";
 import styles from '@/styles/index.module.css';
 import bg from '@/assets/background.jpg';
-import {Rochester } from 'next/font/google';
 import { Leckerli_One } from 'next/font/google';
 
 const leckerli = Leckerli_One({

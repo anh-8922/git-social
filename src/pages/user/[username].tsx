@@ -29,7 +29,7 @@ export default function userDetails() {
         following={user.following}
         publicRepos={user.public_repos}
       />
-      {/* Display additional user details here */}
+     
       <Link href="/" className={styles.backButton}>Back</Link>
     </Layout>
     

@@ -5,6 +5,10 @@
    
 }
 
+  /****************************/
+ /**********LAYOUT************/
+/****************************/
+
 .layout {
     display: flex;
     flex-direction: column;
@@ -21,6 +25,10 @@
     font-size: 2rem;
     word-spacing: 1rem;
 }
+
+  /****************************/
+ /***USER LIST COMPONENT******/
+/****************************/
 
 .user {
     text-align: center;
