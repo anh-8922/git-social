@@ -36,9 +36,26 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    width: 50%;
+    width: 45%;
     font-size: 1.3rem;
     
+}
+
+.pagination {
+    margin: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.pagination > button {
+    background-color: whitesmoke;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+}
+
+.pageNumber {
+    margin-top: 0.5rem;
 }
 
 

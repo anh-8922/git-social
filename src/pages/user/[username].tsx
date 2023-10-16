@@ -1,11 +1,11 @@
 // pages/user/[username].tsx
 import React from 'react';
 import { useRouter } from 'next/router';
-//import styles from '@/styles/components.module.css';
+import styles from '@/styles/components.module.css';
 import Layout from '@/components/layout';
 import { useGitHubApi } from '../api/gitAPI';
 import UserCard from '@/components/userCard';
-
+import Link from 'next/link';
 
 export default function userDetails() {
   const router = useRouter();
@@ -30,7 +30,9 @@ export default function userDetails() {
         publicRepos={user.public_repos}
       />
       {/* Display additional user details here */}
+      <Link href="/" className={styles.backButton}>Back</Link>
     </Layout>
+    
   );
 };
 

@@ -3,7 +3,7 @@
 }
 
 .listImages {
-    width: 7rem;
+    width: 6rem;
     border-radius: 50%;
 }
 
@@ -66,3 +66,13 @@
         gap: 3rem
     }
 }   
+
+.backButton {
+    position: absolute;
+    right: 47%;
+    bottom: 5%;
+    background-color: whitesmoke;
+    padding: 1rem 1.5rem;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+}
