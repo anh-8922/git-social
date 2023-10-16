@@ -7,9 +7,9 @@ const fetcher = async (url: string) => {
   return response.data;
 };
 
-export const useGitHubApi = (path: string, perPage: number = 11) => {
+export const useGitHubApi = (path: string, perPage: number = 100, page: number = 1) => {
   const baseUrl = 'https://api.github.com'; // GitHub API base URL
-  const url = `${baseUrl}${path}?per_page=${perPage}`;
+  const url = `${baseUrl}${path}?per_page=${perPage}&page=${page}`;
   
   const { data, error } = useSWR(url, fetcher);
 

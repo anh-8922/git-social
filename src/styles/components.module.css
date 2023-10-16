@@ -12,12 +12,26 @@
 
 .heading {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     padding: 1rem 0 3rem 0;
     color: whitesmoke;
     font-size: 2rem;
     color: black;
+}
+
+.navigator {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+   
+    padding: 1rem 0;
+   
+}
+
+.navigator:active {
+    color: pink;
 }
 
 /*background-color: #286da8;*/
@@ -26,10 +40,11 @@
     background-color: whitesmoke;
     border-radius: 2rem;
     padding: 3rem;
-    margin-top: 3rem;
+    
     display: flex;
     flex-direction: column;
-    gap: 2rem
+    gap: 2rem;
+    
 }
 
 
@@ -43,3 +58,11 @@
     width: 10rem;
     border-radius: 50%;
 }
+
+@media (min-width: 701px) and (max-width: 1120px) {
+    .cardBody {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem
+    }
+}   

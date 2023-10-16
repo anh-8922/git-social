@@ -10,16 +10,16 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .source {
     position: fixed;
-    right: 0;
-   
-    top: 50%;
-    transform: rotate(-270deg);
-    font-size: 1.3rem;
+    left: -6rem;
+    transform: rotate(270deg);
+    bottom: 50%;
+    font-size: 2rem;
+    word-spacing: 1rem;
 }
 
 .user {

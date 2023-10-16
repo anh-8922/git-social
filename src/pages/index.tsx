@@ -1,15 +1,7 @@
 import Head from 'next/head'
 //import Image from 'next/image'
-import { Inter } from 'next/font/google'
-//import styles from '@/styles/Home.module.css'
 import UserList from './userList';
-import styles from '@/styles/index.module.css';
-import Heading from '@/components/heading';
-import bg from '@/assets/background.jpg';
 import Layout from '@/components/layout';
-//import '../styles/Home.module.css';
-
-//const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (

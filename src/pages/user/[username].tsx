@@ -1,16 +1,13 @@
 // pages/user/[username].tsx
 import React from 'react';
 import { useRouter } from 'next/router';
-import styles from '@/styles/components.module.css';
+//import styles from '@/styles/components.module.css';
 import Layout from '@/components/layout';
-import useSWR from 'swr';
-//import { useGitHubApi } from '../../lib/useGitHubApi';
 import { useGitHubApi } from '../api/gitAPI';
-//import UserCard from '../../components/UserCard';
 import UserCard from '@/components/userCard';
 
 
-const UserDetails: React.FC = () => {
+export default function userDetails() {
   const router = useRouter();
   const { username } = router.query;
   const { data: user, isLoading, isError } = useGitHubApi(`/users/${username}`);
@@ -37,4 +34,3 @@ const UserDetails: React.FC = () => {
   );
 };
 
-export default UserDetails;
