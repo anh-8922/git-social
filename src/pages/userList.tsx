@@ -6,7 +6,8 @@ import Link from 'next/link';
 //import { useGitHubApi } from '../lib/useGitHubApi';
 //import UserCard from '../components/UserCard';
 import { useGitHubApi } from './api/gitAPI';
-import UserCard from '@/components/userCard';
+//import UserCard from '@/components/userCard';
+import ListCard from '@/components/listCard';
 
 const UserList: React.FC = () => {
   const { data: users, isLoading, isError } = useGitHubApi('/users', 11);
@@ -21,7 +22,7 @@ const UserList: React.FC = () => {
         {users.map((user: any) => (
             <Link key={user.login} href={`/user/${user.login}`}>
             <div className={styles.listUser}>
-                <UserCard
+                <ListCard
                 avatarUrl={user.avatar_url}
                 firstName={user.name?.split(' ')[0] || ''}
                 lastName={user.name?.split(' ')[1] || ''}

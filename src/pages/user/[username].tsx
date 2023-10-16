@@ -20,7 +20,7 @@ const UserDetails: React.FC = () => {
 
   return (
     <Layout>
-      <h1>User Details</h1>
+      
       <UserCard
         avatarUrl={user.avatar_url}
         firstName={user.name?.split(' ')[0] || ''}

@@ -8,7 +8,7 @@ export default function Layout({ children }) {
     style={{backgroundImage: `url(${bg.src})`, backgroundSize:'cover'}}>
       <Heading/>
       <main className={styles.main}>{children}</main>
-      <h5>Source: anh-dev.com</h5>
+      <p className={styles.source}>www.anh-dev.com</p>
     </div>
   )
 }

@@ -8,9 +8,18 @@
 .layout {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-
+    justify-content: flex-start;
+    align-items: center;
     height: 100vh;
+}
+
+.source {
+    position: fixed;
+    right: 0;
+   
+    top: 50%;
+    transform: rotate(-270deg);
+    font-size: 1.3rem;
 }
 
 .user {
