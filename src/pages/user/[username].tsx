@@ -1,5 +1,6 @@
 // pages/user/[username].tsx
 import React from 'react';
+//import { useRouter } from 'next/router';
 import { useRouter } from 'next/router';
 import styles from '@/styles/components.module.css';
 import Layout from '@/components/layout';
